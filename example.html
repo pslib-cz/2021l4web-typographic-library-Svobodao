@@ -42,7 +42,7 @@
         </nav>
     </header>
     <main>
-        <h1 class="color--mediumBlue">Freedom <span class="color--red">CSS</span></h1>
+        <h1 class="heading color--mediumBlue">Freedom <span class="color--red">CSS</span></h1>
 
         <h2 id="Typo">Typography</h2>
 
@@ -138,13 +138,20 @@
         
             <h3>Blockquote</h3>
             <blockquote class="blockQuote">
-                <p class="blockQuote__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ad corrupti sequi laborum aliquid maxime! Cumque esse sit iure? Neque quam odio reprehenderit enim quas sint exercitationem perspiciatis, fugit id?</p>
-                <figcaption class="blockQuote__author">Title author 2021</figcaption>
+                <p class="blockQuote__text">Only two things are infinite, the universe and human stupidity, and I'm not sure about the former.</p>
+                <figcaption class="blockQuote__author">Albert Einstein</figcaption>
+            </blockquote>
+            <blockquote class="blockQuote">
+                <p class="blockQuote__text">Kte je Bartoš? Tak kto je ten premiér? </p>
+                <figcaption class="blockQuote__author">Andrej Babiš, 2021</figcaption>
             </blockquote>
         
             <h2 id="Buttons">Buttons</h2>
-            <input class="button" type="button" value="Click Me!">
-            <button class="button" type="button">Click Me!</button>
+
+            <div class="flex">
+                <form action="https://therickroll.com"><input class="button" type="submit" value="Click Me!"></form>
+                <button class="button" type="button" onclick="">Click Me!</button>
+            </div>
         </section>
         
         <section id="Tables">
@@ -181,34 +188,41 @@
         <section id="Images">
             <h2>Images</h2>
             <figure>
-                <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
-                <figcaption>Image Description</figcaption>
+                <img src="img/Statue_of_Liberty.jpg" alt="Statue of Liberty" width="250px">
+                <figcaption>Statue of Liberty</figcaption>
             </figure>
     
+            <h3>Gallery</h3>
             <div class="gallery">
                 <figure>
-                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
-                    <figcaption>Image Description</figcaption>
+                    <img src="img/Statue_of_Liberty.jpg" alt="Statue of Liberty" width="250px">
+                    <figcaption>Statue of Liberty</figcaption>
                 </figure>
                 <figure>
-                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
-                    <figcaption>Image Description</figcaption>
+                    <img src="img/Statue_of_Liberty.jpg" alt="Statue of Liberty" width="250px">
+                    <figcaption>Statue of Liberty</figcaption>
                 </figure>
                 <figure>
-                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
-                    <figcaption>Image Description</figcaption>
+                    <img src="img/Statue_of_Liberty.jpg" alt="Statue of Liberty" width="250px">
+                    <figcaption>Statue of Liberty</figcaption>
+                </figure>
+            </div>
+            <div class="gallery">
+                <figure>
+                    <img src="img/1984-Big-Brother.jpg" alt="Big Brother" width="180px">
+                    <figcaption>Literally 1984</figcaption>
                 </figure>
                 <figure>
-                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
-                    <figcaption>Image Description</figcaption>
+                    <img src="img/1984-Big-Brother.jpg" alt="Big Brother" width="180px">
+                    <figcaption>Literally 1984</figcaption>
                 </figure>
                 <figure>
-                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
-                    <figcaption>Image Description</figcaption>
+                    <img src="img/Hackerman.png" alt="Hackerman" width="250px">
+                    <figcaption>"Programování" HTML</figcaption>
                 </figure>
                 <figure>
-                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
-                    <figcaption>Image Description</figcaption>
+                    <img src="img/Hackerman.png" alt="Hackerman" width="250px">
+                    <figcaption>"Programování" HTML</figcaption>
                 </figure>
             </div>
         </section>
@@ -228,7 +242,7 @@
         </section>
     </main>
     <footer>
-        <p class="footer">Copyright 2021 Ondřej Svoboda</p>
+        <p class="footer">Made by Ondřej Svoboda <a href="mailto:ondrej.svoboda@pslib.cz">ondrej.svoboda@pslib.cz</a></p>
     </footer>
 </body>
 </html>

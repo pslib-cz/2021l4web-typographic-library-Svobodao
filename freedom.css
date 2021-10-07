@@ -419,8 +419,22 @@ p {
     orphans: 3;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--fcss-red);
+}
+
 .uppercase {
     text-transform: uppercase;
+}
+
+.heading {
+    text-decoration: none;
+    font-size: 48px;
 }
 
 .align--middle {
@@ -623,9 +637,14 @@ tr:nth-child(even) {
 /* Images */
 
 figure {
-    margin: 1em 0; 
+    margin: .5em 0; 
     position: relative;
     display: inline-block;
+}
+
+figure:hover {
+    transition: 0.2s;
+    transform: scale(1.1);
 }
 
 figure figcaption {
@@ -701,6 +720,7 @@ pre, code {
     .menu, .footer {
         width: 75vw;
         margin: auto;
+        overflow-x: initial;
     }
 }
 
@@ -713,6 +733,7 @@ pre, code {
     .menu, .footer {
         width: 65vw;
         margin: auto;
+        overflow-x: initial;
     }
 }
 
@@ -728,7 +749,7 @@ pre, code {
     }
 }
 
-/*
+
 @media (prefers-color-scheme: dark) {
     body, main {
         background-color: rgb(24, 26, 27);
@@ -748,5 +769,3 @@ pre, code {
         background-color: var(--fcss-mediumBlue);
     }
   }
-
-  */
