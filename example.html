@@ -10,19 +10,33 @@
 <body>
     <header>
         <nav>
-            <span class="logo"><span class="color--lightBlue">Freedom</span> <span class="color--red">CSS</span></span>
             <ul class="menu">
                 <li class="menu__item">
-                    <a href="Headings">Headings</a>
+                    <span class="logo"><span class="color--lightBlue">Freedom</span> <span class="color--red">CSS</span></span>
                 </li>
                 <li class="menu__item">
-                    <a href="Headings">Headings</a>
+                    <a href="#Typo">Typography</a>
                 </li>
                 <li class="menu__item">
-                    <a href="Headings">Headings</a>
+                    <a href="#Lists">Lists</a>
                 </li>
                 <li class="menu__item">
-                    <a href="Headings">Headings</a>
+                    <a href="#Ouotes">Quotes</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#Buttons">Buttons</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#Tables">Tables</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#Images">Images</a>
+                </li>
+                <li class="menu__item">
+                    <a href="#Code">Code</a>
+                </li>
+                <li class="menu__item">
+                    <a href="https://github.com">GitHub</a>
                 </li>
             </ul>
         </nav>
@@ -31,6 +45,20 @@
         <h1 class="color--mediumBlue">Freedom <span class="color--red">CSS</span></h1>
 
         <h2 id="Typo">Typography</h2>
+
+        <p>
+            <code><b></b></code>
+            <b>This is an example of Bold text</b>
+        </p>
+        <p>
+            <u>This is an example of Underlined text</u>
+        </p>
+        <p>
+            <s>This is an example of Striked text</s>
+        </p>
+        <p>
+            <i>This is an example of Italic text</i>
+        </p>
 
         <div class="flex">
             <p class="align--left">
@@ -46,76 +74,161 @@
             </p>
         </div>
 
-        <h2 id="Headings">Headings</h2>
-        <h1 class="uppercase">Heading H1 example</h1>
-        <h2>Heading H2 example</h2>
-        <h3>Heading H3 example</h3>
-        <h4>Heading H4 example</h4>
-        <h5>Heading H5 example</h5>
-        <h6>Heading H6 example</h6>
+        <section id="Headings">
+            <h2>Headings</h2>
+            <h1 class="uppercase">Heading H1 example</h1>
+            <h2>Heading H2 example</h2>
+            <h3>Heading H3 example</h3>
+            <h4>Heading H4 example</h4>
+            <h5>Heading H5 example</h5>
+            <h6>Heading H6 example</h6>
+        </section>
     
-        <div class="flex">
-            <div>
-                <h2 id="Unordered-list">Unordered list</h2>
-                <ul class="list">
-                    <li>List item</li>
-                    <li>List item</li>
-                    <li>List item</li>
-                    <li>List item </li>
-                </ul>
+        <section id="Lists">
+            <h2>Lists</h2>
+
+            <div class="flex">
+                <div>
+                    <h3>Unordered list</h3>
+                    <ul>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item</li>
+                        <li>List item
+                            <ul class="list">
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item</li>
+                                <li>List item </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Ordered list</h3>
+                    <ol>
+                        <li>List item #1</li>
+                        <li>List item #2</li>
+                        <li>List item #3</li>
+                        <li>List item #4
+                            <ol class="list">
+                                <li>List item #1</li>
+                                <li>List item #2</li>
+                                <li>List item #3</li>
+                                <li>List item #4
+                                    <ol class="list">
+                                        <li>List item #1</li>
+                                        <li>List item #2</li>
+                                        <li>List item #3</li>
+                                        <li>List item #4</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </div>
             </div>
+        </section>
+    
+        <section id="Ouotes">
+            <h2>Quotes</h2>
+
+            <h3>Quote</h3>
+            <q>Some random quote</q>
         
-            <div>
-                <h2 id="Ordered-list">Ordered list</h2>
-                <ol class="list">
-                    <li class="list__item">List item #1</li>
-                    <li class="list__item">List item #2</li>
-                    <li class="list__item">List item #3</li>
-                    <li class="list__item">List item #4</li>
-                </ol>
+            <h3>Blockquote</h3>
+            <blockquote class="blockQuote">
+                <p class="blockQuote__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ad corrupti sequi laborum aliquid maxime! Cumque esse sit iure? Neque quam odio reprehenderit enim quas sint exercitationem perspiciatis, fugit id?</p>
+                <figcaption class="blockQuote__author">Title author 2021</figcaption>
+            </blockquote>
+        
+            <h2 id="Buttons">Buttons</h2>
+            <input class="button" type="button" value="Click Me!">
+            <button class="button" type="button">Click Me!</button>
+        </section>
+        
+        <section id="Tables">
+            <h2>Tables</h2>
+            <table>
+                <tr>
+                    <th>Country</th>
+                    <th>Capital</th>
+                    <th>Number of people</th>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>Washington D.C.</td>
+                    <td>332 379 100</td>
+                </tr>
+                <tr>
+                    <td>Russia</td>
+                    <td>Moscow</td>
+                    <td>145 911 570</td>
+                </tr>
+                <tr>
+                    <td>China</td>
+                    <td>Beijing</td>
+                    <td>1 443 252 000</td>
+                </tr>
+                <tr>
+                    <td>Czech Republic</td>
+                    <td>Prague</td>
+                    <td>10 701 777</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="Images">
+            <h2>Images</h2>
+            <figure>
+                <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
+                <figcaption>Image Description</figcaption>
+            </figure>
+    
+            <div class="gallery">
+                <figure>
+                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
+                    <figcaption>Image Description</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
+                    <figcaption>Image Description</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
+                    <figcaption>Image Description</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
+                    <figcaption>Image Description</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
+                    <figcaption>Image Description</figcaption>
+                </figure>
+                <figure>
+                    <img src="img/Statue_of_Liberty.jpg" alt="Status of Liberty" width="250px">
+                    <figcaption>Image Description</figcaption>
+                </figure>
             </div>
-        </div>
-    
-        <h2 id="Ouotes">Quotes</h2>
-        <q class="quote">Some random quote</q>
-    
-        <blockquote class="blockQuote">
-            <p class="blockQuote__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ad corrupti sequi laborum aliquid maxime! Cumque esse sit iure? Neque quam odio reprehenderit enim quas sint exercitationem perspiciatis, fugit id?</p>
-            <figcaption class="blockQuote__author">Title author 2021</figcaption>
-        </blockquote>
-    
-        <h2 id="Buttons">Buttons</h2>
-        <input class="button" type="button" value="Click Me!">
-        <button class="button" type="button">Click Me!</button>
-        
-        <h2 id="Tables">Tables</h2>
-        <table>
-            <tr>
-                <th>Country</th>
-                <th>Capital</th>
-                <th>Number of people</th>
-            </tr>
-            <tr>
-                <td>USA</td>
-                <td>Washington D.C.</td>
-                <td>332 379 100</td>
-            </tr>
-            <tr>
-                <td>Russia</td>
-                <td>Moscow</td>
-                <td>145 911 570</td>
-            </tr>
-            <tr>
-                <td>China</td>
-                <td>Beijing</td>
-                <td>1 443 252 000</td>
-            </tr>
-            <tr>
-                <td>Czech Republic</td>
-                <td>Prague</td>
-                <td>10 701 777</td>
-            </tr>
-        </table>
+        </section>
+
+        <section id="Code">
+            <h2 id="Code">Code snippets</h2>
+            <code><pre>
+            .button {
+                padding: 1em;
+                color: var(--fcss-light);
+                background-color: var(--fcss-darkBlue);
+                border-radius: 8px;
+                border: 1px solid var(--fcss-light);
+                cursor: pointer;
+            }
+            </pre></code>
+        </section>
     </main>
+    <footer>
+        <p class="footer">Copyright 2021 Ondřej Svoboda</p>
+    </footer>
 </body>
 </html>
