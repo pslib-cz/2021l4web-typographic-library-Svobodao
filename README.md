@@ -65,4 +65,49 @@ You can simply add `class="button"` to create a button. You can use both the `<i
 <button class="button" type="button">Click Me!</button>
 ```
 
+### Tables
+Standard syntax is used for tables:
+```HTML
+            <table>
+                <tr>
+                    <th>Country</th>
+                    <th>Capital</th>
+                    <th>Number of people</th>
+                </tr>
+                <tr>
+                    <td>USA</td>
+                    <td>Washington D.C.</td>
+                    <td>332 379 100</td>
+                </tr>
+                <tr>
+                    <td>Russia</td>
+                    <td>Moscow</td>
+                    <td>145 911 570</td>
+                </tr>
+            </table>
+```
+
+### Images
+Images can be used by themselves or in a gallery which puts them in a row. The image is inside `<figure>` element and `<figcaption>` tag is used for the description. You can hover over the images and the description shows up and the image zooms. You can add a gallery with a HTML class `class="gallery"`. Simple image syntax:
+```HTML
+<figure>
+    <img src="img/Statue_of_Liberty.jpg" alt="Statue of Liberty" width="250px">
+    <figcaption>Statue of Liberty</figcaption>
+</figure>
+```
+
+### Code snippets
+The best way to format code is using tags `<code>` and `<pre>`. This preserves the whitespaces and formating and the font is changed to monospace font (Courier New, Roboto Mono or Consolas). This also creates a colored box for easier reading.
+```HTML
+<code><pre>
+    .button {
+        padding: 1em;
+        color: var(--fcss-light);
+        background-color: var(--fcss-darkBlue);
+        border-radius: 8px;
+        border: 1px solid var(--fcss-light);
+        cursor: pointer;
+    }
+</pre></code>
+```
 ...
