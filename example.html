@@ -8,38 +8,114 @@
     <link rel="stylesheet" href="freedom.css">
 </head>
 <body>
-    <h1>Freedom CSS</h1>
+    <header>
+        <nav>
+            <span class="logo"><span class="color--lightBlue">Freedom</span> <span class="color--red">CSS</span></span>
+            <ul class="menu">
+                <li class="menu__item">
+                    <a href="Headings">Headings</a>
+                </li>
+                <li class="menu__item">
+                    <a href="Headings">Headings</a>
+                </li>
+                <li class="menu__item">
+                    <a href="Headings">Headings</a>
+                </li>
+                <li class="menu__item">
+                    <a href="Headings">Headings</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="color--mediumBlue">Freedom <span class="color--red">CSS</span></h1>
 
-    <h1 class="uppercase">Heading H1 example</h1>
-    <h2>Heading H2 example</h2>
-    <h3>Heading H3 example</h3>
-    <h4>Heading H4 example</h4>
-    <h5>Heading H5 example</h5>
-    <h6>Heading H6 example</h6>
+        <h2 id="Typo">Typography</h2>
 
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis, dolores provident aperiam iure illum placeat molestias necessitatibus debitis blanditiis quasi est, expedita reprehenderit commodi tempora iste in, deserunt error.
-    </p>
+        <div class="flex">
+            <p class="align--left">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis, dolores provident aperiam iure illum placeat molestias necessitatibus debitis blanditiis quasi est, expedita reprehenderit commodi tempora iste in, deserunt error.
+            </p>
+    
+            <p class="align--middle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis, dolores provident aperiam iure illum placeat molestias necessitatibus debitis blanditiis quasi est, expedita reprehenderit commodi tempora iste in, deserunt error.
+            </p>
+    
+            <p class="align--right">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quis, dolores provident aperiam iure illum placeat molestias necessitatibus debitis blanditiis quasi est, expedita reprehenderit commodi tempora iste in, deserunt error.
+            </p>
+        </div>
 
-    <h2>Unordered list</h2>
-    <ul>
-        <li>List item</li>
-        <li>List item</li>
-        <li>List item</li>
-        <li>List item </li>
-    </ul>
-
-    <h2>Ordered list</h2>
-    <ol>
-        <li>List item #1</li>
-        <li>List item #2</li>
-        <li>List item #3</li>
-        <li>List item #4</li>
-    </ol>
-
-    <blockquote>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ad corrupti sequi laborum aliquid maxime! Cumque esse sit iure? Neque quam odio reprehenderit enim quas sint exercitationem perspiciatis, fugit id?</p>
-        <figcaption>Title author</figcaption>
-    </blockquote>
+        <h2 id="Headings">Headings</h2>
+        <h1 class="uppercase">Heading H1 example</h1>
+        <h2>Heading H2 example</h2>
+        <h3>Heading H3 example</h3>
+        <h4>Heading H4 example</h4>
+        <h5>Heading H5 example</h5>
+        <h6>Heading H6 example</h6>
+    
+        <div class="flex">
+            <div>
+                <h2 id="Unordered-list">Unordered list</h2>
+                <ul class="list">
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item</li>
+                    <li>List item </li>
+                </ul>
+            </div>
+        
+            <div>
+                <h2 id="Ordered-list">Ordered list</h2>
+                <ol class="list">
+                    <li class="list__item">List item #1</li>
+                    <li class="list__item">List item #2</li>
+                    <li class="list__item">List item #3</li>
+                    <li class="list__item">List item #4</li>
+                </ol>
+            </div>
+        </div>
+    
+        <h2 id="Ouotes">Quotes</h2>
+        <q class="quote">Some random quote</q>
+    
+        <blockquote class="blockQuote">
+            <p class="blockQuote__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ad corrupti sequi laborum aliquid maxime! Cumque esse sit iure? Neque quam odio reprehenderit enim quas sint exercitationem perspiciatis, fugit id?</p>
+            <figcaption class="blockQuote__author">Title author 2021</figcaption>
+        </blockquote>
+    
+        <h2 id="Buttons">Buttons</h2>
+        <input class="button" type="button" value="Click Me!">
+        <button class="button" type="button">Click Me!</button>
+        
+        <h2 id="Tables">Tables</h2>
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>Capital</th>
+                <th>Number of people</th>
+            </tr>
+            <tr>
+                <td>USA</td>
+                <td>Washington D.C.</td>
+                <td>332 379 100</td>
+            </tr>
+            <tr>
+                <td>Russia</td>
+                <td>Moscow</td>
+                <td>145 911 570</td>
+            </tr>
+            <tr>
+                <td>China</td>
+                <td>Beijing</td>
+                <td>1 443 252 000</td>
+            </tr>
+            <tr>
+                <td>Czech Republic</td>
+                <td>Prague</td>
+                <td>10 701 777</td>
+            </tr>
+        </table>
+    </main>
 </body>
 </html>
