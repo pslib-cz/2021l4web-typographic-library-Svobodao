@@ -661,7 +661,6 @@ figure figcaption {
 
 figure > img {
     object-fit: contain;
-    width: fit-content;
 }
 
 figure:hover figcaption {
